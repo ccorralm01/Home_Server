@@ -1,0 +1,15 @@
+services:
+  vaultwarden:
+    container_name: vaultwarden
+    image: vaultwarden/server:latest
+    restart: always
+    ports:
+      - 8180:80
+    environment:
+      - ADMIN_TOKEN=TOKEN
+      - SIGNUPS_ALLOWED=false # Permitir registros de nuevos usuarios
+      - DOMAIN=https://example.cesarcorral.cc/
+      - DATABASE_URL=/data/db.sqlite3
+    volumes:
+      - ./data:/data
+networks: {}
