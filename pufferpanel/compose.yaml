@@ -1,0 +1,14 @@
+services:
+  pufferpanel:
+    container_name: pufferpanel
+    network_mode: host
+    volumes:
+      - ./pufferpanel-config:/etc/pufferpanel
+      - ./pufferpanel-data:/var/lib/pufferpanel
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: on-failure
+    image: pufferpanel/pufferpanel:latest
+volumes:
+  pufferpanel-config: null
+  pufferpanel-data: null
+networks: {}
