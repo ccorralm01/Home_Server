@@ -1,0 +1,9 @@
+services:
+  stirling-pdf:
+    container_name: stirling-pdf
+    ports:
+      - 8071:8080
+    volumes:
+      - ./stirling-data:/configs
+    image: stirlingtools/stirling-pdf:latest
+networks: {}
