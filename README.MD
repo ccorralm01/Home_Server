@@ -24,16 +24,15 @@ Para mantener la seguridad de mi configuración todos los datos de caracter sens
 
 Cada carpeta representa un servicio independiente desplegado mediante su propio `docker-compose.yml`.
 
-Home_Server/
-  jellyfin/
-  n8n/
-  nginx_proxy_manager/
-  owncloud/
-  pufferpanel/
-  qbittorrent/
-  stirling-pdf/
-  vaultwarden/
-  README.md
+Home_Server/jellyfin/
+Home_Server/n8n/
+Home_Server/nginx_proxy_manager/
+Home_Server/owncloud/
+Home_Server/pufferpanel/
+Home_Server/qbittorrent/
+Home_Server/stirling-pdf/
+Home_Server/vaultwarden/
+Home_Server/README.md
 
 ---
 
